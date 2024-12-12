@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: black;
+    background-image: url('Home/Logo5.png'), url('Home/Logo5.png'), url('Home/Logo5.png');
+    background-repeat: repeat-x, repeat-x, repeat-x;
+    background-size: 200px 200px, 200px 200px, 200px 200px;
+    background-position: top, center, bottom;
+    text-transform: uppercase;
+}
+
+header,
+main,
+footer {
+    width: 70vw;
+    min-width: 800px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: wheat;
+    padding: 1%;
+}
+
+header {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+}
+
+.logo {
+    height: 4em;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li,
+.menu li a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    height: 100%;
+}
+
+.menu li a:hover {
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+
+.menu li:hover {
+    border-bottom: 0.1em solid black;
+}
+
+.menu li.active {
+    border-bottom: 0.15em solid black;
+}
+
+.skipnav { 
+    text-align: left; 
+}
+.skipnav a { 
+    position: absolute; 
+    left: -10000px; 
+    width: 1px; 
+    height: 1px; 
+    overflow: hidden; 
+}
+  .skipnav a:focus, .skipnav a:active { 
+    position: static; 
+    left: 0; 
+    width: auto; 
+    height: auto; 
+    overflow: visible; 
+    text-decoration: underline; 
+}
+
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top h1 {
+    font-size: 2em;
+}
+
+#Visual{
+    flex: 50%;
+}
+
+a#uppercase {
+    font-size: 2em;
+    display: none;
+}
+
+a#normalcase {
+    font-size: 2em;
+    display: block;
+}
+
+.left-img figure{
+    margin-bottom: 1em;
+    text-align: center;
+    border:1px solid grey;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-img figure img{
+    border-radius: 20px;
+    width:100%;
+}
+
+hr{
+    width:100%;
+    border: 1px solid black;
+}
+
+article{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+
+figcaption{
+    font-style: italic;
+    width:80%;
+    margin:auto;
+}
+
+
+.right-img figure{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:1em;
+    text-align: center;
+    border:1px solid grey;
+    border-radius: 20px;
+    width: 50%;
+}
+
+.right-img figure img{
+    border-radius: 20px;
+    width:100%;
+}
+
+.left-img p{
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+.right-img p{
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+article h2{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+footer{
+    background-color:red;
+    opacity: 0.9;
+    text-align:center;
+    font-size: 1em;
+}

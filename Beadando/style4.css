@@ -1,0 +1,148 @@
+@import url('style1.css');
+
+
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+a#uppercase{
+    font-size: 2em;
+}
+
+a#normalcase{
+    font-size: 2em;
+    display: none;
+}
+
+
+
+.left-img figure{
+    float:left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    border:1px solid grey;
+    border-radius: 20px;
+    width: 40%;
+}
+
+.left-img figure img{
+    border-radius: 20px;
+    width:100%;
+}
+
+hr{
+    width:100%;
+    border: 1px solid black;
+}
+
+article{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+
+
+figcaption{
+    font-style: italic;
+    width:80%;
+    margin:auto;
+}
+
+
+.right-img figure{
+    float:right;
+    margin-left: 1em;
+    margin-bottom:0.2em;
+    text-align: center;
+    border:1px solid grey;
+    border-radius: 20px;
+    width: 40%;
+}
+
+.right-img figure img{
+    border-radius: 20px;
+    width:100%;
+}
+
+.left-img p{
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.right-img p{
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+article h2{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+
+@media screen and (max-width:1040px) {
+ 
+    .right-img figure {
+        float:none;
+        margin-bottom: 1em;
+        text-align: center;
+        border:1px solid grey;
+        border-radius: 20px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .left-img figure {
+        float:none;
+        margin-bottom: 1em;
+        text-align: center;
+        border:1px solid grey;
+        border-radius: 20px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media print{
+    *{
+        margin:0;
+    }
+
+    body{
+        background: none;
+        
+    }
+
+
+    header,footer{
+        display:none;
+    }
+
+    main{
+        margin:0;
+    }
+
+    video{
+        display:none
+    }
+
+    img{
+        width: 50%;
+        height:auto;
+    }
+
+    a#uppercase{
+        display: none;
+    }
+
+    article{
+        font-size: 0.75em;
+    }
+}

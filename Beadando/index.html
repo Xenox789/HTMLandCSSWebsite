@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style1.css" rel="stylesheet" type="text/css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="uppercase.css" title="uppercase">
+    <script src="styleswitcher.js"></script>
+    <script src="script.js"></script>
+    <title>Home - Szollosi Adam's website</title>
+</head>
+
+<body>
+    <div class="skipnav"><a href="#maincontent">Skip to main content</a></div>
+    <header>
+        <img class="logo" src="Home/Logo5.png" alt="F1 logo">
+        <nav>
+            <ul class="menu">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="Grands_Prix.html">Grands Prix</a></li>
+                <li><a href="Teams.html">Teams</a></li>
+                <li><a href="Stories.html">Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="maincontent" tabindex="-1">
+        <div class="top">
+            <h1>Home</h1>
+            <nav id="Visual">
+                <a id="uppercase" href="#" onclick="setActiveStyleSheet('uppercase'); return false;"><span
+                        class="ikon"></span>Uppercase version</a>
+                <a id="normalcase" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span
+                        class="ikon"></span>Normal version</a>
+            </nav>
+        </div>
+        <hr>
+        <section class="media">
+            <div class="slider-cont">
+                <h2 id="slider-caption">Stories:</h2>
+                <div id="slider">
+                    <ul id="slideWrap">
+                        <li>
+                            <a href="Stories.html#Hamilton">
+                                <div class="slide">
+                                    <img src="Home/Hamilton.jpg" alt="Sir Lewis Hamilton">
+                                    <div class="caption"> Lewis Hamilton</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Stories.html#HuntvsLauda">
+                                <div class="slide">
+                                    <img src="Home/Hunt_vs_Lauda.jpg" alt="James Hunt and Niki Lauda">
+                                    <div class="caption">Hunt vs Lauda</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Stories.html#Schumacher">
+                                <div class="slide">
+                                    <img src="Home/Schumacher.jpg" alt="Michael Schumacher">
+                                    <div class="caption">Michael Schumacher</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Stories.html#Senna">
+                                <div class="slide">
+                                    <img src="Home/Senna.jpg" alt="Ayrton Senna">
+                                    <div class="caption">Senna's Tragedy</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a id="prev" href="#">&#8810;</a>
+                    <a id="next" href="#">&#8811;</a>
+                </div>
+            </div>
+            <div class="vid-cont">
+                <video class="video" controls poster="Home/Videocover.jpg">
+                    <source src="Home/video.mp4" type="video/mp4">
+                    <p>Your browser do not support the video player.</p>
+                </video>
+                <div class="video-desc-link">
+                    <h3>Video <a href="video.html"> description</a></h3>
+                </div>
+            </div>
+            
+        </section>
+        <div class="middle">
+            <article class="history">
+                <h2>History</h2>
+                <p>
+                    <b>Formula One</b><i>(more commonly known as Formula 1 or F1)</i> is the highest class of international
+                    racing
+                    for
+                    open-wheel single-seater formula racing cars. Formula One originated from the European Motor
+                    Racing
+                    Championships of the 1920s and 1930s. The <b>first world championship race</b> took place at the
+                    Silverstone
+                    Circuit in the United Kingdom on <b>13 May 1950.</b>
+                </p>
+                <p>
+                    A Formula One Grand Prix event spans a weekend. It typically begins with <b>two free practice</b>
+                    sessions
+                    on
+                    <b>Friday</b>, and <b>one free practice</b> on <b>Saturday</b>. A <b>qualifying session</b> is held after the last free
+                    practice
+                    session. This session <b>determines the starting order for the race</b> on Sunday.
+                    In an effort to add even more excitement to the race weekend, the FIA introduced
+                    <b>sprint races</b>. These races are <b>shorter</b> than the traditional
+                    Grand Prix, and take place on <b>Saturday</b> instead of Sunday. The results
+                    then <b>determine the starting grid</b> for the actual Grand Prix on Sunday.
+                </p>
+                <p>
+                    <i>If you want to learn more about F1, please visit their <a href="https://www.formula1.com/">official page</a> or watch highligths of old Grands Prix
+                        and other entertaining contents from the world of F1 on their <a href="https://www.youtube.com/@Formula1">Youtube channel</a>.</i>
+                </p>
+                <form class=normal-form action="mailto:szollosiadamh@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-left">
+                        <label for="name">Name:</label><br>
+                        <input type="text" name="name" id="name" size="80"><br>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" name="email" id="email" size="80"><br>
+                        <label for="driver">Favorite F1 driver:</label>
+                        <select name="driver" class="driver" id="driver">
+                            <option value="">Please select</option>
+                            <option value="Hamilton">Lewis Hamilton</option>
+                            <option value="Verstappen">Max Verstappen</option>
+                            <option value="Bottas">Valtteri Bottas</option>
+                            <option value="Perez">Sergio Perez</option>
+                            <option value="Norris">Lando Norris</option>
+                            <option value="Leclerc">Charles Leclerc</option>
+                            <option value="Sainz">Carlos Sainz</option>
+                            <option value="Sargeant">Logan Sargeant</option>
+                            <option value="Stroll">Lance Stroll</option>
+                            <option value="Alonso">Fernando Alonso</option>
+                            <option value="Ocon">Esteban Ocon</option>
+                            <option value="Tsunoda">Yuki Tsunoda</option>
+                            <option value="Russel">George Russell</option>
+                            <option value="De Vries">Nick De Vries</option>
+                            <option value="Nico">Nico Hülkenberg</option>
+                            <option value="Zhou">Zhou Guanyu</option>
+                            <option value="Kevin">Kevin Magnussen</option>
+                            <option value="Oscar">Oscar Piastri</option>
+                            <option value="Gasly">Pierre Gasly</option>
+                        </select><br>
+                        <label for="why">Why?</label><br>
+                        <textarea cols=80 name="why" class="why" id="why"
+                            placeholder="Explain why is he your favourite F1 driver"></textarea><br>
+                    </div>
+                    <div class="form-right">
+                        <label for="rating">Please rate our website:</label><br>
+                        <div class="rating">
+                            <input type="radio" name="rating" value="1" id="1"><label for="1">1☆</label>
+                            <input type="radio" name="rating" value="2" id="2"><label for="2">2☆</label>
+                            <input type="radio" name="rating" value="3" id="3"><label for="3">3☆</label>
+                            <input type="radio" name="rating" value="4" id="4"><label for="4">4☆</label>
+                            <input type="radio" name="rating" value="5" id="5"><label for="5">5☆</label>
+                        </div><br>
+                        <label for="newsletter">Do you want to subscribe to our newsletter?</label>
+                        <input type="checkbox" name="newsletter" id="newsletter" value="yes"><br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+
+                </form>
+            </article>
+            <table class="Leaderboard-table">
+                <caption id="Leaderboard-caption">
+                    <strong>Driver Leaderboard</strong>
+                    <details>
+                        <summary> Summary </summary>
+                        <p>The table contains the leaderboard of the current F1 season. It has 4 columns, contains
+                            driver's position, name, team and points.</p>
+                    </details>
+                </caption>
+                <thead>
+                    <tr>
+                        <td>Pos</td>
+                        <td>Drivers</td>
+                        <td>Team</td>
+                        <td>Point</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>Verstappen</td>
+                    <td>Red Bull</td>
+                    <td>44</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Perez</td>
+                    <td>Red Bull</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Alonso</td>
+                    <td>Aston</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sainz</td>
+                    <td>Ferrari</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Hamilton</td>
+                    <td>Mercedes</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Russel</td>
+                    <td>Mercedes</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Stroll</td>
+                    <td>Aston</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Leclerc</td>
+                    <td>Ferrari</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Bottas</td>
+                    <td>Alfa</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Ocon</td>
+                    <td>Alpine</td>
+                    <td>4</td>
+                </tr>
+            </table>
+        </div>
+        <form class=small-form action="mailto:szollosiadamh@gmail.com" method="post" enctype="text/plain">
+            <div class="form-left">
+                <label for="name2">Name:</label><br>
+                <input type="text" name="name" class="name" id="name2" size="80"><br>
+                <label for="email2">E-mail:</label><br>
+                <input type="email" name="email" class="email" id="email2" size="80"><br>
+                <label for="driver">Favorite F1 driver:</label>
+                <select name="driver" class="driver">
+                    <option value="">Please select</option>
+                    <option value="Hamilton">Lewis Hamilton</option>
+                    <option value="Verstappen">Max Verstappen</option>
+                    <option value="Bottas">Valtteri Bottas</option>
+                    <option value="Perez">Sergio Perez</option>
+                    <option value="Norris">Lando Norris</option>
+                    <option value="Leclerc">Charles Leclerc</option>
+                    <option value="Sainz">Carlos Sainz</option>
+                    <option value="Sargeant">Logan Sargeant</option>
+                    <option value="Stroll">Lance Stroll</option>
+                    <option value="Alonso">Fernando Alonso</option>
+                    <option value="Ocon">Esteban Ocon</option>
+                    <option value="Tsunoda">Yuki Tsunoda</option>
+                    <option value="Russel">George Russell</option>
+                    <option value="De Vries">Nick De Vries</option>
+                    <option value="Nico">Nico Hülkenberg</option>
+                    <option value="Zhou">Zhou Guanyu</option>
+                    <option value="Kevin">Kevin Magnussen</option>
+                    <option value="Oscar">Oscar Piastri</option>
+                    <option value="Gasly">Pierre Gasly</option>
+                </select><br>
+                <label for="why">Why?</label><br>
+                <textarea cols=80 name="why" class="why"
+                    placeholder="Explain why is he your favourite F1 driver"></textarea><br>
+            </div>
+            <div class="form-right">
+                <label for="rating">Please rate our website:</label><br>
+                <div class="rating">
+                    <input type="radio" name="rating" value="1" class="1"><label for="1">1☆</label>
+                    <input type="radio" name="rating" value="2" class="2"><label for="2">2☆</label>
+                    <input type="radio" name="rating" value="3" class="3"><label for="3">3☆</label>
+                    <input type="radio" name="rating" value="4" class="4"><label for="4">4☆</label>
+                    <input type="radio" name="rating" value="5" class="5"><label for="5">5☆</label>
+                </div><br>
+                <label for="newsletter">Do you want to subscribe to our newsletter?</label>
+                <input type="checkbox" name="newsletter" value="yes"><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        <address>
+            <p>Made by: Szöllősi Ádám<br>
+                <a href="mailto:szollosiadamh@gmail.com">(szollosiadamh@gmail.com)</a><br>
+                69420 Budapest, Vanneve u. 33.
+            </p>
+        </address>
+        <p><a href="https://www.formula1.com/">Source: F1 official site </a></p>
+    </footer>
+</body>
+
+</html>
